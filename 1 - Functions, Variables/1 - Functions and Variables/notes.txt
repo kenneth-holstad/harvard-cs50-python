@@ -1,0 +1,60 @@
+functions have "arguments" as inputs
+things they do (such as output) are called "side effects"
+any mistake is a "bug"
+
+functions are called in terminal by "python function.py"
+
+some error messages will be friendly (such as unclosed parentheses) but some won't
+
+some functions have "return values" and use variables
+= is the assignment operator in python
+input() takes string input from user
+
+add comments with # (you can prepare/structure code with "pseudocode")
+or you can put multi-line comments between """ and """
+
+str is string in python
+all of python official documentation is at docs.python.org
+
+print documentation:
+print(*objects, sep=' ', end='\n', file=sys.stdout, flush=False)
+
+*objects means as many objects as you want
+you can see it automatically separates with a space and ends with a newline
+
+python doesn't care whether you use single or double quotes for strings, but you should be consistent
+of course, escaping becomes a thing there, escape with \
+
+Many handy string methods exist like .strip(), .title(), .capitalize(), .split()
+
+int is integer in python
+there is no upper/lower bound on the size of int's in python
+% is the modulo operator (find remainder of x%y from dividing x/y)
+
+by just calling python, you can enter "interactive mode" where lines start with >>>
+then you don't need to call python over and over, but you essentially just use it as a calculator
+
+you can generally nest functions in python
+
+you'll want to develop general best practice for writing code
+key things to prioritize are readability, simplicity, and scalability
+
+other common numeric data type is float
+note that you get into a mess of floating type approximations here
+
+round(number[, ndigits])
+# if you want to be able to display thousands, millions with commas
+# print(f"{z:,}")
+
+def is used to create functions
+NOTE: you must keep indentation under defined function for python to know it's still part of the function
+
+also note that python scripts run top to bottom, so you must define functions by when you call them
+also scripts won't error until a line errors
+you can get around this with scripting convention by defining a main() function
+that allows you to script in a more logical flow, making functions after you know what they need to do
+	see hellomain.py
+note that any function you create is independent, they can call other functions and you can pass variables that way
+but variables only have the "scope" of where they are specifically defined
+
+unlike print, return will actually produce a stored value
