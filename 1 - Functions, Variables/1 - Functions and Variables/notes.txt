@@ -25,7 +25,7 @@ you can see it automatically separates with a space and ends with a newline
 python doesn't care whether you use single or double quotes for strings, but you should be consistent
 of course, escaping becomes a thing there, escape with \
 
-Many handy string methods exist like .strip(), .title(), .capitalize(), .split()
+Many handy string methods exist like .strip(), .title(), .capitalize(), .split(), .replace()
 
 int is integer in python
 there is no upper/lower bound on the size of int's in python

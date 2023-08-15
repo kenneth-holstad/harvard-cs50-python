@@ -1,0 +1,14 @@
+VS Code is an open source IDE available to download to computer
+It's also available in the cloud
+CS50 has its own implementation:
+
+code.cs50.io
+
+You have your own container up there to store files, install programs, etc. (uses Linux)
+Interact via CLI and GUI
+
+Commands in this space:
+code makes a new file (ex: code hello.py)
+Standard linux commands (ls, cp, mv, rm, mkdir, cd, rmdir, clear, etc)
+
+The rest of the lesson is just navigating around in Linux...
