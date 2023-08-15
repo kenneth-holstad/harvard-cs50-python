@@ -1,0 +1,53 @@
+Conditionals are self-explanatory
+Built-in symbols for python: >, >=, <, <=, ==, !=
+
+if statements are pretty simple to do in python
+they'll use boolean values which you can create with conditional statements
+General form (statement is a conditional statement, code is whatever you want):
+
+if statement:
+    code
+elif statement:
+    code
+else:
+    code
+
+see that you don't need () or anything else around the conditions
+You can include (or not include) as many of each step as you want, and it'll flow logically
+
+you can use the literal words and/or in your conditional statements
+
+"Pythonic" programming is the term for certain coding practices that are python-specific
+that are typically very clean and use specific features of python
+example:
+
+you can shorten this function to something more pythonic
+old:
+def is_even(n):
+    if n % 2 == 0:
+        return True
+    else:
+        return False
+
+new:
+def is_even(n):
+    return True if n % 2 == 0 else False
+
+even more pythonic:
+def is_even(n):
+    return n % 2 == 0
+
+match is another way to do similar conditional logic (it's similar to switch in java, etc)
+general form:
+
+match variable:
+    case value:
+        code
+    case value:
+        code
+    case _:
+        code
+
+case _: is the "else"
+that _ will have use in other contexts in python as well
+match will be useful for more powerful forms of matching
