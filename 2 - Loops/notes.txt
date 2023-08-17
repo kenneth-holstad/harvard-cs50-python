@@ -1,0 +1,54 @@
+syntax for loops is similar to conditionals
+
+while, for loops
+see meow.py for basic loops
+
+you can do += to do a basic iteration (e.g. i += 1 instead of i = i + 1)
+
+for loops generally iterate using a list
+you can iterate over many objects, doesn't have to be numbers
+you can make a basic list using range()
+	note: range(5) produces [0, 1, 2, 3, 4]
+you may use _ as the iteration variable (after "for") as you don't care about the variable
+
+there is a pythonic way to do multiple prints:
+# extra \n is produced without end part
+print("meow\n" * x, end="")
+
+it's common to deliberately introduce an infinite loop when you are asking for user input
+which you will break out of when they give you the input you want, start with
+while True:
+
+you can use this however you want with conditional loops inside, and continue/break commands
+
+for lists:
+length command is len()
+you can access an index with list[x]
+
+two ways to iterate over a list:
+for student in students:
+for i in range(len(students)):
+
+another type of data type is dict
+technically speaking, they are a set of key-value pairs
+to create a dict, create key-value pairs between {}:
+students = {
+    "Hermoine": "Gryffindor",
+    "Harry": "Gryffindor",
+    "Ron": "Gryffindor",
+    "Draco": "Slytherin",
+}
+# interestingly, python is forgiving to having a comma at the end as above. it also works without.
+
+you can can create a list of dictionaries as follows:
+students = [
+    {"name": "Hermoine", "house": "Gryffindor", "patronus": "Otter"},
+    {"name": "Harry", "house": "Gryffindor", "patronus": "Stag"},
+    {"name": "Ron", "house": "Gryffindor", "patronus": "Jack Russell terrier"},
+    {"name": "Draco", "house": "Slytherin", "patronus": None},
+]
+# note: None is a keyword for null
+
+documentation on dict's: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
+
+rest of lesson (mario example) is about nested loops
