@@ -10,4 +10,5 @@ for _ in range(x):
     print("meow")
 
 # pythonic loop
+# extra \n is produced without end part
 print("meow\n" * x, end="")

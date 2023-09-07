@@ -1,0 +1,11 @@
+Common debugging methods - many of these I already do
+
+basic example: print variable value at various points of code, such as in a loop
+
+fortunately, more powerful tools also exist in python and vscode
+
+in vscode and some other tools, one built in debugging method is "breakpoints"
+that allows you to step slowly through the code step by step to monitor progress
+you do this in vscode by clicking the line number(s) you want, and then running the debugger
+this will show you things like variable values, etc.
+"step into" button lets you go stepwise, "step over" would execute and skip the next step

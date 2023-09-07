@@ -1,0 +1,52 @@
+Different types of errors or exceptions exist:
+
+SyntaxError - you gotta fix these
+
+Some other kinds of exceptions can be protected against in your code
+	"error handling" and "defensive programming"
+
+ValueError
+NameError
+
+Useful keywords: try and except
+raise will also be taught later on
+
+try lets you try things, except lets you set alternate behavior (rather than erroring) in case of exception
+
+these codes all do the same thing:
+def get_int():
+    while True:
+        try:
+            x = int(input("What's x?"))
+        except ValueError:
+            print("x is not an integer")
+        else:
+            break
+    return x
+
+def get_int():
+    while True:
+        try:
+            x = int(input("What's x?"))
+        except ValueError:
+            print("x is not an integer")
+        else:
+            return x
+
+def get_int():
+    while True:
+        try:
+            return int(input("What's x?"))
+        except ValueError:
+            print("x is not an integer")
+
+note that specifically inside a function, "return" will immediately end all execution for that function
+so it's like an even harder break
+
+you can also write logic to "pass" in case of exception, which does nothing
+def get_int():
+    while True:
+        try:
+            return int(input("What's x?"))
+        except ValueError:
+            pass
