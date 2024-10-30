@@ -1,0 +1,24 @@
+Libraries are ways to share code, either with others, or with yourself between projects
+Modules are specifically configured for reusability of code
+An example is the module "random" - documentation at docs.python.org/3/library/random.html
+
+How to import and use functions from a module like "random":
+import random
+random.choice(["heads", "tails"])
+
+What can be more convenient is using the "from" keyword so you don't have to constantly affirm which module your function came from:
+from random import choice
+then you only need to call "choice" instead of "random.choice"
+Note: there is a risk if you're importing a lot (or make poor variable/function naming decisions)
+that you could cause a conflict by doing this
+
+random.randint(x,y) generates random integer from x to y
+random.shuffle(x) shuffles the actual list (as opposed to returning a value)
+
+there is also a library "statistics" for statistical functions (docs.python.org/3/library/statistics.html)
+
+sys.argv[] returns whatever the user had input to call this
+example: python name.py David
+	it ignores python, name.py is arg 0, David is arg 1
+
+You can use conditionals to avoid having to handle errors with exceptions - see code example

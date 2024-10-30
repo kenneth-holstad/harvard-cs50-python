@@ -1,7 +1,7 @@
 # show general scripting convention
 # also add conditional to allow default behavior
 def main():
-    name = input("Name?" )
+    name = input("Name? " )
     if name.strip() == "":
         hello()
     else:
