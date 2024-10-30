@@ -1,4 +1,5 @@
 emoticon = "v.v"
+# this is a sad emoji
 
 def main():
     global emoticon
