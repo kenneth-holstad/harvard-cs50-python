@@ -58,7 +58,7 @@ See Shorts/report.py for notes on working with dictionaries describing an object
     includes get() function to assist in null handling
 
 See Shorts/distances.py for using a dictionary as key-value pairs instead
-    includes keys() function to iterate by keys
+    includes keys() function to iterate by keys, values() function to iterate by values, and items() function to iterate by items
 
 TODO: dicts are one of the most important things in this course, I likely need to go above and beyond this course in practicing with these.
 TODO: I need to be VERY familiar with these dicts and all different ways to use them. Revisit this at the end of course

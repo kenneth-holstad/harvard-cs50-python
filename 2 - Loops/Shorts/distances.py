@@ -16,12 +16,12 @@ alternative method 1 - iterate by values (note: this does not pass on the names 
     for distance in distances.values():
         print(f"{distance} AU is {convert(distance)} m")
 
-a way to force the above to work with displaying names just for fun:
+I looked up a way to force the above to work with displaying names just for fun (but you'd never do this):
 names = list(distances.keys())
 for i, distance in enumerate(distances.values()):
     print(f"{names[i]} is {distance} AU ({convert(distance)} m) from Earth")
 
-alternative method 2 - iterate by items:
+better alternative method - iterate by items: (this was not taught in course)
     for name, distance in distances.items():
         print(f"{name} is {distance} AU ({convert(distance)} m) from Earth")
 
@@ -31,3 +31,5 @@ def convert(au):
     return au * 149597870700
 
 main()
+
+# work on this script continues in section 3 - exceptions
