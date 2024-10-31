@@ -52,3 +52,6 @@ students = [
 documentation on dict's: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 
 rest of lesson (mario example) is about nested loops
+
+Shorts notes:
+See Shorts/results.py for usage of append function to add entries to a list
