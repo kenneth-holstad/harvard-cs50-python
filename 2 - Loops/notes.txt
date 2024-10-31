@@ -29,6 +29,9 @@ two ways to iterate over a list:
 for student in students:
 for i in range(len(students)):
 
+See Shorts/results.py for usage of functions to modify lists:
+    append, remove, reverse, extend, insert
+
 another type of data type is dict
 technically speaking, they are a set of key-value pairs
 to create a dict, create key-value pairs between {}:
@@ -51,8 +54,14 @@ students = [
 
 documentation on dict's: https://docs.python.org/3/tutorial/datastructures.html#dictionaries
 
+See Shorts/report.py for notes on working with dictionaries describing an object
+    includes get() function to assist in null handling
+
+See Shorts/distances.py for using a dictionary as key-value pairs instead
+    includes keys() function to iterate by keys
+
+TODO: dicts are one of the most important things in this course, I likely need to go above and beyond this course in practicing with these.
+TODO: I need to be VERY familiar with these dicts and all different ways to use them. Revisit this at the end of course
+
 rest of lesson (mario example) is about nested loops
 
-Shorts notes:
-See Shorts/results.py for usage of functions to modify lists:
-    append, remove, reverse, extend, insert
