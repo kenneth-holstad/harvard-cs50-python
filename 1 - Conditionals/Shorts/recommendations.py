@@ -2,6 +2,7 @@ def main():
     difficulty = input("Difficult or Casual? ")
     players = input("Multiplayer or Single-player? ")
 
+# iteration 1 - suboptimized working archetype
     if difficulty == "Difficult":
         if players == "Multiplayer":
             recommend("Poker")

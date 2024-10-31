@@ -4,6 +4,7 @@ def main():
         print("Enter a valid difficulty")
         return
 
+# iteration 2 - more optimized logic path
     players = input("Multiplayer or Single-player? ")
     if not (players == "Multiplayer" or players == "Single-player"):
        print("Enter a valid number of players")

@@ -9,6 +9,7 @@ def main():
        print("Enter a valid number of players")
        return
 
+# iteration 3 - more direct path by each possibility
     if difficulty == "Difficult" and players == "Multiplayer":
         recommend("Poker")
     elif difficulty == "Difficult" and players == "Single-player":
