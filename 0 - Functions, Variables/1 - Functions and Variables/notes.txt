@@ -11,7 +11,7 @@ some functions have "return values" and use variables
 input() takes string input from user
 
 add comments with # (you can prepare/structure code with "pseudocode")
-or you can put multi-line comments between """ and """
+or you can put multi-line comments between """ and """ (or ''' and ''')
 
 str is string in python
 all of python official documentation is at docs.python.org
