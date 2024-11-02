@@ -9,6 +9,9 @@ random.choice(["heads", "tails"])
 What can be more convenient is using the "from" keyword so you don't have to constantly affirm which module your function came from:
 from random import choice
 then you only need to call "choice" instead of "random.choice"
+	see short - there is also a random.choices function. and random.sample
+	other note: randomness is often a PITA for debugging - you can set random.seed(x) to help with this
+
 Note: there is a risk if you're importing a lot (or make poor variable/function naming decisions)
 that you could cause a conflict by doing this
 
