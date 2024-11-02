@@ -50,3 +50,6 @@ def get_int():
             return int(input("What's x?"))
         except ValueError:
             pass
+
+Note from shorts: You COULD except all exceptions at once (except Exception:)
+but this would usually be bad practice
