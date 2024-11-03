@@ -1,0 +1,10 @@
+A lot of python knowledge at this introductory level is, frankly, trivial
+As just knowing what package you can use to do certain things can save you a lot of work
+I've been interviewed before and asked questions where you were expected to know certain packages
+
+Thus, I should build a specific catalog of packages used and learned about in this course and other places
+including usage examples
+also include pip installations
+TODO: I have some of this already - add this to python-scripts repository
+
+I will want to specifically study and maintain familiarity with these resources

@@ -23,5 +23,23 @@ there is also a library "statistics" for statistical functions (docs.python.org/
 sys.argv[] returns whatever the user had input to call this
 example: python name.py David
 	it ignores python, name.py is arg 0, David is arg 1
+see problem set for practice on these
 
 You can use conditionals to avoid having to handle errors with exceptions - see code example
+
+API:
+Python can act like a browser would to connect to APIs
+requests library makes web requests (import requests) pypi.org/project/requests
+see itunes.py for example
+
+JSON:
+you can access specific fields within a json and loop through them - see itunes.py
+see problem set 6 (bitcoin) for example on nesting further into json
+print(j["bpi"]["USD"]["rate_float"])
+
+You can also produce your own libraries, making modules or packages for code you often reuse
+If you really wanted you could go through the process of uploading it to open source online
+sayings.py shows example - this was also done in soil.py example in section 2 short
+note: main() gets called if you have that line in a code and you import it.
+	to prevent this either you don't have main in the module you produce (see soil.py)
+	OR you access __name__ (special python variable) to check if you are running the main function (see sayings.py)

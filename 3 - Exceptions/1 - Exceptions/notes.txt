@@ -50,6 +50,9 @@ def get_int():
             return int(input("What's x?"))
         except ValueError:
             pass
+note: you can "pass" with a lot of things... such as a number, a boolean, a string, ..., etc.
+however using pass would be the de-facto standard
+the point is, you need SOMETHING there for the indentation block since python relies on it
 
 Note from shorts: You COULD except all exceptions at once (except Exception:)
 but this would usually be bad practice
