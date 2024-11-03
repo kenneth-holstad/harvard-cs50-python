@@ -14,5 +14,5 @@ def goodbye(name):
     print(f"goodbye, {name}")
 
 
-if __name__ == "__main__":
+if __name__ == "__main__": # TODO: I should make a macro for this
     main()

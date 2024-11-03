@@ -1,2 +1,33 @@
 You know unit tests - they are generally ways to test your own code
+Before watching, my own impression - you generally want to test specific cases you want to ensure are handled by the code
+I'm guessing this would include a lot of the error possiblities
 
+So far I have been testing by running the code but you could easily write a second unit test file
+Import first function into the other file and write test cases
+    see calculator.py and test_calculator.py for basic example
+Good to have multiple tests to ensure any coincidental false positives are still caught (i.e. 2 + 2 = 2^2)
+
+It's good practice to follow some convention like test_file.py or file_test.py
+
+You can use "assert" to test that cases are true - failed tests creates an AssertionError
+    However this would take a lot of code to handle these exceptions and make it user friendly
+    To solve this: pytest. It handles a lot of this for you as long as you write the tests
+        There are other, more complex unit test libraries out there
+        To call like this you call "pytest file.py" in command line
+********In my environment I seem to have to run "python -m pytest file.py"
+
+In more complex real-world examples, you might run a whole folder of tests instead of just a single file of tests
+Tests are important when collaborating with others to ensure their/your changes don't break your/their code
+
+Working with new versions of hello.py and testing it:
+Note that it is generally not best practice to make programs that produce side effects instead of real outputs
+This makes them very difficult to test properly
+
+Tests should be simple so you don't need tests for your tests...
+
+If running a folder of tests, the __init__.py file tells python to treat folder as a package instead of a regular module/file
+see test folder in this directory
+
+Shorts notes:
+You can raise errors proactively if you want to
+pytext.approx gives a tolerance range for test assertion
