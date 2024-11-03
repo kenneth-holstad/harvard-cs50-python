@@ -9,4 +9,5 @@
 *.zip
 exercises.png
 assessment*
+*/assessment/*
 self.txt
