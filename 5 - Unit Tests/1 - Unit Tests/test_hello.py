@@ -6,6 +6,6 @@ def test_default():
 
 
 def test_argument():
-    assert hello("David") == "hello, David"
-    for name in ["Hermione", "Harry", "Ron"]:
+    assert hello("David") == "hello, David" # to check a single case
+    for name in ["Hermione", "Harry", "Ron"]: # to check a whole list
         assert hello(name) == f"hello, {name}"

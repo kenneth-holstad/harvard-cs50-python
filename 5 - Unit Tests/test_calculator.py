@@ -33,9 +33,13 @@ def test_square():
     assert square(-2) == 4
     assert square(-3) == 9
     assert square(0) == 0
+    # you could also test for a specific exception i.e. non-number input with pytest
 '''
 
-# split into more clear test cases
+# split into more clear categories of test cases
+# not only does this help categorize what broke, it also allows more tests to run
+# because if you run them all in one function 
+# then only that one function will tell you it broke once the first one breaks
 def test_positive():
     assert square(2) == 4
     assert square(3) == 9
