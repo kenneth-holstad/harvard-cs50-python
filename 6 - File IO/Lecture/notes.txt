@@ -1,0 +1,42 @@
+I/O is input/output - writing scripts that use files to load/store information
+    up to this point we've just been using memory
+
+There's a function sorted() that sorts a list
+    I believe default is alphabetical, ascending.. I'm sure you could adjust with arguments. google it
+        reverse sort order: reverse=True
+
+Functions to manage files: open, write, close
+    open: https://docs.python.org/3/library/functions.html#open
+
+# Basic example - # Appends to a file
+name = input("What's your name? ")
+
+file = open("names.txt", "a")
+file.write(f"{name}\n")
+file.close()
+
+'r' - open for reading (default)
+'w' - open for writing, truncating the file first
+'x' - open for exclusive creation, failing if the file already exists
+'a' - open for writing, appending to the end of file if it exists
+'b' - binary mode
+'t' - text mode (default)
+'+' - open for updating (reading and writing)
+
+You can use with keyword to avoid having to explicitly close file
+
+# Adds context manager - functionally the same as above
+name = input("What's your name? ")
+
+with open("names.txt", "a") as file:
+    file.write(f"{name}\n")
+
+# To read from a file
+with open("names.txt") as file: # note: default is "r" so you don't have to specify just to read a file
+    for line in file:
+        print("hello,", line.rstrip())
+
+To pre-process (such as sort a file) - you can't just print. you need to use storage
+    see names.py for example
+
+CSV files:
